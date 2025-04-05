@@ -37,8 +37,8 @@ public class ToCreateOrgTest extends BaseClass {
 		cop.getSaveorg().click();
 	
 		//Assert.fail();															//Listeners
-		OrganizationInformationPage oo = new OrganizationInformationPage(driver);
-		String orgname = oo.getOrginfo().getText();
+		OrganizationInformationPage oip = new OrganizationInformationPage(driver);
+		String orgname = oip.getOrginfo().getText();
 		Assert.assertTrue(true, orgname);
 		 
 }
