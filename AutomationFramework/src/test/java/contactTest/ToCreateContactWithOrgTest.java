@@ -36,7 +36,7 @@ public class ToCreateContactWithOrgTest extends BaseClass {
 		//ContactsInformationPage ci = new ContactsInformationPage(driver);
 		//String lastname = ci.getContactsHeader().getText();
 		ccp.getSaveButton().click();
-		Assert.fail();															//Listeners
+		//Assert.fail();															//Listeners
 		ContactsInformationPage cip = new ContactsInformationPage(driver);
 		String Lastname = cip.getContactsHeader().getText();
 		Assert.assertTrue(true, Lastname);

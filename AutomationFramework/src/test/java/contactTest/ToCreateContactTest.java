@@ -28,7 +28,7 @@ public void toCreateContact_001() throws EncryptedDocumentException, IOException
 	ccp.getLastnameTextField().sendKeys(LASTNAME);
 	ccp.getSaveButton().click();
 	//Fail
-	Assert.fail();															//Listeners
+	//Assert.fail();															//Listeners
 	ContactsInformationPage cip=new ContactsInformationPage(driver);
 	String lastname=cip.getContactsHeader().getText();
 	Assert.assertTrue(true, lastname);
